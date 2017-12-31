@@ -1,0 +1,318 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\candle01.X.production.obj
+cinit CODE 0 F F 12 2
+text1 CODE 0 21 21 AD 2
+maintext CODE 0 CE CE 2D 2
+cstackBANK0 BANK0 1 40 40 A 1
+intentry CODE 0 4 4 A 2
+bssBANK0 BANK0 1 4A 4A 6 1
+idataBANK0 CODE 0 FB FB 5 2
+dataBANK0 BANK0 1 50 50 5 1
+$C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+reset_vec CODE 0 0 0 1 2
+end_init CODE 0 E E 1 2
+config CONFIG 0 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 55-7D 1
+BANK0 55-7D 1
+CONST 1-3 2
+ENTRY 1-3 2
+IDLOC 2000-2003 2
+STACK 55-7D 1
+CODE 1-3 2
+SFR0 0-3F 1
+STRCODE 1-3 2
+STRING 1-3 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\candle01.X.production.obj
+F cinit CODE >249:C:\Users\muthi\AppData\Local\Temp\s1b8.
+F cinit CODE >252:C:\Users\muthi\AppData\Local\Temp\s1b8.
+F cinit CODE >302:C:\Users\muthi\AppData\Local\Temp\s1b8.
+10 cinit CODE >303:C:\Users\muthi\AppData\Local\Temp\s1b8.
+11 cinit CODE >304:C:\Users\muthi\AppData\Local\Temp\s1b8.
+12 cinit CODE >305:C:\Users\muthi\AppData\Local\Temp\s1b8.
+13 cinit CODE >306:C:\Users\muthi\AppData\Local\Temp\s1b8.
+14 cinit CODE >307:C:\Users\muthi\AppData\Local\Temp\s1b8.
+15 cinit CODE >308:C:\Users\muthi\AppData\Local\Temp\s1b8.
+16 cinit CODE >309:C:\Users\muthi\AppData\Local\Temp\s1b8.
+17 cinit CODE >310:C:\Users\muthi\AppData\Local\Temp\s1b8.
+18 cinit CODE >311:C:\Users\muthi\AppData\Local\Temp\s1b8.
+19 cinit CODE >315:C:\Users\muthi\AppData\Local\Temp\s1b8.
+1A cinit CODE >316:C:\Users\muthi\AppData\Local\Temp\s1b8.
+1B cinit CODE >317:C:\Users\muthi\AppData\Local\Temp\s1b8.
+1C cinit CODE >318:C:\Users\muthi\AppData\Local\Temp\s1b8.
+1D cinit CODE >319:C:\Users\muthi\AppData\Local\Temp\s1b8.
+1E cinit CODE >320:C:\Users\muthi\AppData\Local\Temp\s1b8.
+1F cinit CODE >326:C:\Users\muthi\AppData\Local\Temp\s1b8.
+1F cinit CODE >328:C:\Users\muthi\AppData\Local\Temp\s1b8.
+20 cinit CODE >329:C:\Users\muthi\AppData\Local\Temp\s1b8.
+4 intentry CODE >37:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+21 text1 CODE >37:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+21 text1 CODE >38:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+25 text1 CODE >39:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+28 text1 CODE >40:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+2A text1 CODE >41:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+2B text1 CODE >42:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+2F text1 CODE >43:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+31 text1 CODE >44:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+31 text1 CODE >45:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+33 text1 CODE >46:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+37 text1 CODE >47:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+38 text1 CODE >48:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+43 text1 CODE >49:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+47 text1 CODE >52:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+48 text1 CODE >53:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+65 text1 CODE >54:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+7D text1 CODE >55:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+81 text1 CODE >56:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+89 text1 CODE >57:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+8F text1 CODE >58:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+93 text1 CODE >59:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+97 text1 CODE >60:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+98 text1 CODE >61:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+9A text1 CODE >62:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+9B text1 CODE >63:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+A1 text1 CODE >64:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+A5 text1 CODE >70:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+AE text1 CODE >71:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+B0 text1 CODE >72:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+B8 text1 CODE >73:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+BC text1 CODE >76:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+BE text1 CODE >77:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+C0 text1 CODE >78:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+C2 text1 CODE >80:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+C3 text1 CODE >81:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+CE maintext CODE >83:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+CE maintext CODE >88:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+CF maintext CODE >89:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+D0 maintext CODE >92:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+D1 maintext CODE >93:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+D2 maintext CODE >97:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+D6 maintext CODE >98:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+D7 maintext CODE >99:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+DB maintext CODE >107:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+DC maintext CODE >108:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+DD maintext CODE >109:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+DE maintext CODE >110:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+DF maintext CODE >115:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+E0 maintext CODE >118:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+E4 maintext CODE >122:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+E5 maintext CODE >123:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+E6 maintext CODE >124:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+E8 maintext CODE >128:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+E9 maintext CODE >129:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+EA maintext CODE >133:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+EB maintext CODE >134:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+EB maintext CODE >136:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+ED maintext CODE >135:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+EE maintext CODE >134:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+EF maintext CODE >137:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F3 maintext CODE >138:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F4 maintext CODE >139:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F5 maintext CODE >140:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F6 maintext CODE >141:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F7 maintext CODE >142:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F8 maintext CODE >143:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F9 maintext CODE >144:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+F9 maintext CODE >145:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+FA maintext CODE >132:C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 55 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+_PWM1DCH 15 0 ABS 0 - dist/default/production\candle01.X.production.obj
+_PWM2DCH 18 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_fb 4A 0 BANK0 1 bssBANK0 dist/default/production\candle01.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_TMR0 1 0 ABS 0 - dist/default/production\candle01.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+_left 4F 0 BANK0 1 bssBANK0 dist/default/production\candle01.X.production.obj
+_lfsr 50 0 BANK0 1 dataBANK0 dist/default/production\candle01.X.production.obj
+_main 19C 0 CODE 0 maintext dist/default/production\candle01.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\candle01.X.production.obj
+start 1C 0 CODE 0 init C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+_OPTION_REGbits E 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+_oscillate 52 0 BANK0 1 dataBANK0 dist/default/production\candle01.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+_WDTCONbits 30 0 ABS 0 - dist/default/production\candle01.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+start_initialization 1E 0 CODE 0 cinit dist/default/production\candle01.X.production.obj
+_TRISAbits 6 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__pcstackBANK0 40 0 BANK0 1 cstackBANK0 dist/default/production\candle01.X.production.obj
+_recover 4C 0 BANK0 1 bssBANK0 dist/default/production\candle01.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hcinit 42 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+_INTCONbits B 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 2008 0 ABS 0 - -
+__S1 55 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_isr 42 0 CODE 0 text1 dist/default/production\candle01.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__end_of_isr 19C 0 CODE 0 text1 dist/default/production\candle01.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+__pdataBANK0 50 0 BANK0 1 dataBANK0 dist/default/production\candle01.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_length 54 0 BANK0 1 dataBANK0 dist/default/production\candle01.X.production.obj
+__pmaintext 19C 0 CODE 0 maintext dist/default/production\candle01.X.production.obj
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+_PWM2CONbits 19 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+_target 53 0 BANK0 1 dataBANK0 dist/default/production\candle01.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+stacklo 0 0 ABS 0 - C:\Users\muthi\AppData\Local\Temp\s1b8.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+_PWM1CONbits 16 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 1C 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 3E 0 CODE 0 cinit dist/default/production\candle01.X.production.obj
+__Hintentry 1C 0 CODE 0 intentry -
+_quietCycles 4D 0 BANK0 1 bssBANK0 dist/default/production\candle01.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 42 0 CODE 0 text1 dist/default/production\candle01.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_WDTE$ON 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__end_of__initialization 3E 0 CODE 0 cinit dist/default/production\candle01.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 1F6 0 CODE 0 idataBANK0 dist/default/production\candle01.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\candle01.X.production.obj
+__Hend_init 1E 0 CODE 0 end_init -
+__end_of_main 1F6 0 CODE 0 maintext dist/default/production\candle01.X.production.obj
+_ADRES 1E 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\candle01.X.production.obj
+_right 4E 0 BANK0 1 bssBANK0 dist/default/production\candle01.X.production.obj
+_ADCONbits 1F 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__CFG_LPBOR$ON 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\candle01.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 1E 0 CODE 0 cinit dist/default/production\candle01.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__pbssBANK0 4A 0 BANK0 1 bssBANK0 dist/default/production\candle01.X.production.obj
+_T2CONbits 13 0 ABS 0 - dist/default/production\candle01.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\candle01.X.production.obj
+_ANSELAbits 8 0 ABS 0 - dist/default/production\candle01.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackBANK0 1 40 40 15 1
+intentry 0 4 8 FC 2
+reset_vec 0 0 0 1 2
+config 0 2007 400E 1 2

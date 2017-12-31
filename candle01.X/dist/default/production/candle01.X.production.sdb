@@ -1,0 +1,151 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 10F320 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"37 C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+[v _isr isr `II(v  1 e 1 0 ]
+"83
+[v _main main `(v  1 e 1 0 ]
+"57 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic10f320.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S43 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+]
+"205
+[u S47 . 1 `S43 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES47  1 e 1 @6 ]
+[s S54 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+]
+"269
+[u S58 . 1 `S54 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES58  1 e 1 @8 ]
+[s S22 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"364
+[u S31 . 1 `S22 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES31  1 e 1 @11 ]
+[s S177 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"511
+[s S184 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S188 . 1 `S177 1 . 1 0 `S184 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES188  1 e 1 @14 ]
+[s S125 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"682
+[s S129 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S137 . 1 `S125 1 . 1 0 `S129 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES137  1 e 1 @19 ]
+"768
+[v _PWM1DCH PWM1DCH `VEuc  1 e 1 @21 ]
+[s S95 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 PWM1POL 1 0 :1:4 
+`uc 1 PWM1OUT 1 0 :1:5 
+`uc 1 PWM1OE 1 0 :1:6 
+`uc 1 PWM1EN 1 0 :1:7 
+]
+"857
+[u S101 . 1 `S95 1 . 1 0 ]
+[v _PWM1CONbits PWM1CONbits `VES101  1 e 1 @22 ]
+"950
+[v _PWM2DCH PWM2DCH `VEuc  1 e 1 @24 ]
+[s S110 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 PWM2POL 1 0 :1:4 
+`uc 1 PWM2OUT 1 0 :1:5 
+`uc 1 PWM2OE 1 0 :1:6 
+`uc 1 PWM2EN 1 0 :1:7 
+]
+"1039
+[u S116 . 1 `S110 1 . 1 0 ]
+[v _PWM2CONbits PWM2CONbits `VES116  1 e 1 @25 ]
+"1269
+[v _ADRES ADRES `VEuc  1 e 1 @30 ]
+[s S65 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :3:2 
+`uc 1 ADCS 1 0 :3:5 
+]
+"1298
+[s S70 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 ADCS0 1 0 :1:5 
+`uc 1 ADCS1 1 0 :1:6 
+`uc 1 ADCS2 1 0 :1:7 
+]
+[u S78 . 1 `S65 1 . 1 0 `S70 1 . 1 0 ]
+[v _ADCONbits ADCONbits `VES78  1 e 1 @31 ]
+[s S153 . 1 `uc 1 SWDTEN 1 0 :1:0 
+`uc 1 WDTPS 1 0 :5:1 
+]
+"1979
+[s S156 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WDTPS0 1 0 :1:1 
+`uc 1 WDTPS1 1 0 :1:2 
+`uc 1 WDTPS2 1 0 :1:3 
+`uc 1 WDTPS3 1 0 :1:4 
+`uc 1 WDTPS4 1 0 :1:5 
+]
+[u S163 . 1 `S153 1 . 1 0 `S156 1 . 1 0 ]
+[v _WDTCONbits WDTCONbits `VES163  1 e 1 @48 ]
+"27 C:\Users\muthi\MPLABXProjects\candle01.X\main.c
+[v _lfsr lfsr `us  1 e 2 0 ]
+"28
+[v _fb fb `us  1 e 2 0 ]
+"29
+[v _left left `uc  1 e 1 0 ]
+"30
+[v _right right `uc  1 e 1 0 ]
+"31
+[v _length length `uc  1 e 1 0 ]
+"32
+[v _target target `uc  1 e 1 0 ]
+"33
+[v _oscillate oscillate `uc  1 e 1 0 ]
+"34
+[v _quietCycles quietCycles `uc  1 e 1 0 ]
+"35
+[v _recover recover `uc  1 e 1 0 ]
+"83
+[v _main main `(v  1 e 1 0 ]
+{
+"148
+} 0
+"37
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"81
+} 0
