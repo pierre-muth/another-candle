@@ -132,15 +132,15 @@ void main(void) {
     while(1) {
         ADCONbits.GO_nDONE = 1;   // ADC start convertion
         while(ADCONbits.GO_nDONE){  // wait it's done
-            NOP();   
+//            NOP();   // not needed
         }
-        if(ADRES > 0xE0){   // if it's too bright outside, off and sleep
-            PWM1CONbits.PWM1OE = 0; // output disable
-            PWM2CONbits.PWM2OE = 0; // output disable
+        if(ADRES > 0xB0){   // if it's too bright outside, off and sleep
+            TRISAbits.TRISA0 = 0b1;      // input, high-Z 
+            TRISAbits.TRISA1 = 0b1;      // input, high-Z 
             SLEEP();
         } else {
-            PWM1CONbits.PWM1OE = 1; // output enable
-            PWM2CONbits.PWM2OE = 1; // output enable
+            TRISAbits.TRISA0 = 0b0;      // output 
+            TRISAbits.TRISA1 = 0b0;      // output 
         }
         CLRWDT();   // reset watchdog
 //        __delay_ms(20);
